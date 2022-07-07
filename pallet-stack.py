@@ -1,3 +1,16 @@
+"""
+a program that accepts user input for any number of box dims(l,w,h).
+the program will take all the box dims and calculte the 
+most efficient way to stack the boxes given l,w,h limits(pallet dims)
+
+ex: (l1,w1,h1) + (l2,w2,h2) +... <= 48
+    (l1,w1,h1) + (l2,w2,h2) +... <= 40
+    (l1,w1,h1) + (l2,w2,h2) +... <= {ex:70} (this value will be from user input)
+
+
+"""
+
+
 print('--------Box1---------')
 l1 = float(input('enter length'))
 w1 = float(input('enter width'))
@@ -41,3 +54,12 @@ def max_width():
 print(max_width())
 
 # find out more about permutations and combinations. plan out the logic on paper first
+
+# (l1,w1,h1) + (l2,w2,h2) +... = 48
+# (l1,w1,h1) + (l2,w2,h2) +... = 40
+# (l1,w1,h1) + (l2,w2,h2) +... = given by the user
+
+# possible_length = [(l1,w1,h1), (l2,w2,h2), ...]
+
+# for l in possible_length:
+    # sum(l.combinations())
