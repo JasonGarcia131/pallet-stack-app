@@ -27,7 +27,7 @@ box2 = [l2,w2,h2]
 # l3 = float(input('enter length'))
 # w3 = float(input('enter width'))
 # h3 = float(input('enter heigth'))
-# box3 = [l3,w3,h3]
+# box3 = [l3,w3,h3],
 
 
 def max_box_fun(*boxes):
